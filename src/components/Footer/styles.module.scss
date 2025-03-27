@@ -1,0 +1,22 @@
+@use '@styles/variable.module.scss' as *;
+@use '@styles/mixin.module.scss' as *;
+
+.container {
+    @include flex_box_custom(center, center, 20px);
+
+    flex-direction: column;
+    background-color: #363636;
+    margin-top: 100px;
+    color: $white_color;
+    padding: 50px 0;
+
+    .boxMenu {
+        @include flex_box_custom(center, center, 50px);
+        font-size: 15px;
+
+        :hover {
+            opacity: 0.6;
+            cursor: pointer;
+        }
+    }
+}
